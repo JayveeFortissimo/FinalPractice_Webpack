@@ -1,0 +1,187 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+header{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+
+}
+
+/*/////Add To Cart/////////*/
+.Addtocart{
+    gap: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    }
+
+    /*/////Humburger Bar/////8/*/
+
+    .HumburderBar div{
+  height: 0.5rem;
+  width: 2.6rem;
+  background-color: rgb(29, 29, 29);
+    }
+
+    .HumburderBar{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    @media screen and (max-width:600px) {
+        .HumburderBar
+        {
+            visibility: visible;
+            margin-left: 100px;
+        }
+
+        .Addtocart{
+            visibility: hidden;
+        }
+
+        nav h1{
+            margin-left:0px;
+        }
+
+    }
+
+
+/*///////////////MainBodyy////////////////////*/
+
+.Main{
+min-height: 70vh;
+background-image: url(computer.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+
+
+    /*//////////SECTION/////////////*/
+    
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  min-height: 100vh;
+ 
+    }
+
+    .Cards{
+        width: auto;
+        height: auto;
+        padding: 20px;
+        box-shadow: 0px 0px 5px 0px;
+    }
+    
+
+    img{
+        height: 15rem;
+    }
+
+
+    .container{
+        display: flex;
+   justify-content: center;
+align-items: center;
+flex-direction: row-reverse;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+.buttons{
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*///////////////////Foooter////////////////////*/
+
+
+footer{
+    height: 5rem;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+
+
+/*///////Modsals//////////////*/
+
+.MContainers{
+    height: auto;
+    width: 80vh;
+    z-index: 2;
+    border-radius: 20px;
+    background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.MContainers button{
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(31, 31, 31);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.Modals{
+    width: 100%; 
+    height: 100%;
+    z-index: 1; 
+    overflow: auto;
+    left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  visibility: hidden;
+}
+
+.imgs{
+    height: 5rem;
+}
+
+
+    
